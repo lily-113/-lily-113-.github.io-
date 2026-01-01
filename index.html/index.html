@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栗子的世界</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 封面区域 -->
+    <section class="cover" id="cover">
+        <div class="cover-content">
+            <h1>栗子的世界</h1>
+            <p>用镜头捕捉瞬间，用音乐讲述故事，用文字编织梦境。这里是关于摄影、音乐剧和小说的个人空间。</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="scrollToContent()">探索世界</button>
+                <button class="btn btn-outline" onclick="window.open('#', '_blank')">关于我</button>
+            </div>
+        </div>
+        <div class="scroll-down" onclick="scrollToContent()">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- 导航区域 -->
+    <nav class="nav-container" id="nav">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#photography" class="nav-link active" data-section="photography">
+                    <i class="fas fa-camera nav-icon"></i>摄影
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#musicals" class="nav-link" data-section="musicals">
+                    <i class="fas fa-music nav-icon"></i>音乐剧
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#novels" class="nav-link" data-section="novels">
+                    <i class="fas fa-book nav-icon"></i>小说
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 内容区域 -->
+    <main class="content-container">
+        <!-- 摄影页面 -->
+        <section class="content-section active" id="photography">
+            <div class="section-header">
+                <h2 class="section-title">摄影作品</h2>
+                <p class="section-subtitle">每一张照片都是我们的私人定制</p>
+            </div>
+            <div class="photo-grid" id="photo-grid">
+                <!-- 摄影作品将通过JS动态加载 -->
+            </div>
+        </section>
+
+        <!-- 音乐剧页面 -->
+        <section class="content-section" id="musicals">
+            <div class="section-header">
+                <h2 class="section-title">音乐剧殿堂</h2>
+                <p class="section-subtitle">沉浸在音乐与戏剧交织的奇妙世界</p>
+            </div>
+            <div class="musical-container" id="musical-container">
+                <!-- 音乐剧内容将通过JS动态加载 -->
+            </div>
+        </section>
+
+        <!-- 小说页面 -->
+        <section class="content-section" id="novels">
+            <div class="section-header">
+                <h2 class="section-title">读书角</h2>
+                <p class="section-subtitle">阅读是无声的对话，是与千万个灵魂的邂逅</p>
+            </div>
+            <div class="novel-container" id="novel-container">
+                <!-- 小说内容将通过JS动态加载 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">栗子的世界</div>
+            <p class="footer-desc">记录生活，分享热爱，创造美好</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-weibo"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">© 2025 栗子的世界. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
